@@ -1,0 +1,69 @@
+.form {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    background-color: rgba(#fff, 0.18);
+    box-shadow: inset 52.2px -52.2px 52.2px rgba(173, 183, 182, 0.181),
+        inset -52.2px 52.2px 52.2px rgba(255, 255, 255, 0.181);
+    backdrop-filter: blur(48px) opacity(90%);
+
+    padding: 47px 74px 45px 64px;
+
+    &__title {
+        max-width: 189px;
+        font-size: 28px;
+        line-height: 0.94;
+        margin-right: -14px;
+    }
+
+    &__group {
+        position: relative;
+    }
+    &__label {
+        position: absolute;
+        top: 7px;
+        left: 12px;
+
+        font-size: 18px;
+        color: #b5b5b5;
+    }
+
+    &__input {
+        padding: 37px 12px 13px;
+
+        max-height: 74px;
+
+        font-family: $family;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.18;
+        color: #333333;
+
+        border: 0;
+
+        &::-webkit-calendar-picker-indicator {
+            color: rgba(0, 0, 0, 0);
+            opacity: 1;
+            display: block;
+            background: url('../img/icons/calendar.png') no-repeat;
+            width: 34px;
+            height: 30px;
+        }
+    }
+
+    #input-check-in,
+    #input-check-out {
+        width: 250px;
+    }
+    #input-guests {
+        width: 265px;
+    }
+
+    &__btn {
+        width: 226px;
+        height: 74px;
+    }
+}

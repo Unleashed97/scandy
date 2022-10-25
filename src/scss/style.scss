@@ -17,6 +17,7 @@ body {
     font-family: $family;
     font-weight: 500;
     color: $colors-primary;
+    line-height: 1.18;
 }
 
 h1,
@@ -46,3 +47,5 @@ ul {
 @import 'components/container.scss';
 @import 'components/nav.scss';
 @import 'components/btn.scss';
+@import 'components/showcase.scss';
+@import 'components/form.scss';

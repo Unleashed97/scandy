@@ -8,6 +8,7 @@
     font-family: $family;
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.18;
     color: $colors-primary;
 
     background: none;
@@ -16,5 +17,11 @@
 
     &--orange {
         background-color: $colors-orange;
+    }
+
+    &--light-blue {
+        font-size: 24px;
+        color: #1e1e1e;
+        background-color: #b8c8dc;
     }
 }
