@@ -1,0 +1,20 @@
+.btn {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $family;
+    font-size: 20px;
+    font-weight: 500;
+    color: $colors-primary;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    &--orange {
+        background-color: $colors-orange;
+    }
+}

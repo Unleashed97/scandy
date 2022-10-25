@@ -1,0 +1,10 @@
+.nav {
+    &__list {
+        display: flex;
+        gap: 43px;
+    }
+
+    &__link {
+        font-size: 18px;
+    }
+}
