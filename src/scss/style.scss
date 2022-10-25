@@ -16,8 +16,9 @@
 body {
     font-family: $family;
     font-weight: 500;
-    color: $colors-primary;
+    background-color: #ebeff4;
     line-height: 1.18;
+    color: $colors-primary;
 }
 
 h1,
@@ -41,6 +42,12 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
@@ -49,3 +56,4 @@ ul {
 @import 'components/btn.scss';
 @import 'components/showcase.scss';
 @import 'components/form.scss';
+@import 'components/section.scss';
