@@ -113,26 +113,43 @@
     }
 
     &--faq {
+        background: url('../img/section/faq/bg.png');
         background-repeat: no-repeat;
+        background-size: cover;
 
         .section__inner {
-            margin-bottom: 67px;
+            padding-bottom: 67px;
         }
 
         .section__header {
-            margin-bottom: 42px;
+            padding-bottom: 42px;
+        }
+
+        .section__header-title-bg {
+            color: rgba($colors-primary, 0.2);
         }
     }
 
     &--map {
-        padding-bottom: 57px;
+        padding-bottom: 100px;
+
+        background: url('../img/section/map/bg.png');
+
+        background-position-y: -200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
         .section__header {
             margin-bottom: 42px;
+        }
+
+        .section__header-title-bg {
+            color: rgba($colors-primary, 0.2);
         }
     }
 
     &__inner {
-        margin-top: 212px;
+        padding-top: 212px;
     }
 
     &__header {
@@ -145,7 +162,7 @@
         position: absolute;
         left: 75px;
         top: -120px;
-        z-index: -1;
+        z-index: 0;
 
         font-size: 177px;
         text-transform: uppercase;

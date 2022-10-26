@@ -8,10 +8,15 @@
     height: 57px;
 
     background-color: rgba(#1d1d1d, 0.2);
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__left .nav__list {
+        gap: 65px;
     }
 
     &__logo {
