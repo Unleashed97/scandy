@@ -1,0 +1,16 @@
+.socials {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__link {
+        display: flex;
+        gap: 5px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.04;
+        color: $colors-title;
+    }
+}

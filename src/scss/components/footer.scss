@@ -1,2 +1,40 @@
 .footer {
+    background: #ebeff4, url('../img/footer/bg.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 124px;
+    padding-bottom: 20px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        color: $colors-title;
+    }
+
+    &__caption {
+        margin-bottom: 21px;
+    }
+
+    &__scroll-up {
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: $colors-primary;
+        background-color: #e37a3e;
+
+        border: 0;
+        cursor: pointer;
+        img {
+            transform: rotate(90deg);
+            margin-bottom: 9px;
+        }
+    }
 }
