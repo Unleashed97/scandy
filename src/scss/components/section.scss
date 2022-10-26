@@ -35,6 +35,7 @@
     &--st {
         .section__inner {
             margin-top: 134px;
+            margin-bottom: 63px;
         }
         .section__header-title-bg {
             font-size: 150px;
@@ -48,6 +49,13 @@
             grid-template-columns: 352px 307px 317px 357px;
             grid-template-rows: 267px 422px;
             gap: 22px;
+        }
+    }
+
+    &--restaurant {
+        margin-bottom: 70px;
+        .section__header {
+            margin-bottom: 40px;
         }
     }
 
