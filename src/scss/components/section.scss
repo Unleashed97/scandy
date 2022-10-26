@@ -32,6 +32,25 @@
         }
     }
 
+    &--st {
+        .section__inner {
+            margin-top: 134px;
+        }
+        .section__header-title-bg {
+            font-size: 150px;
+            line-height: 0.89;
+        }
+
+        .section__content {
+            max-height: 711px;
+
+            display: grid;
+            grid-template-columns: 352px 307px 317px 357px;
+            grid-template-rows: 267px 422px;
+            gap: 22px;
+        }
+    }
+
     &__inner {
         margin-top: 212px;
     }
