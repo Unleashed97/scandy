@@ -1,4 +1,9 @@
 .swiper {
+    &--5 {
+        .swiper-slide {
+            display: flex;
+        }
+    }
 }
 
 .swiper-button-prev,
