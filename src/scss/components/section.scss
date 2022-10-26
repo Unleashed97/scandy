@@ -30,6 +30,10 @@
             margin: 0 auto;
             margin-top: 48px;
         }
+
+        .swiper {
+            width: 50%;
+        }
     }
 
     &--st {
@@ -56,6 +60,51 @@
         margin-bottom: 70px;
         .section__header {
             margin-bottom: 40px;
+        }
+    }
+
+    &--events {
+        .section__inner {
+            max-width: 1659px;
+            margin-left: auto;
+
+            margin-bottom: 31px;
+        }
+
+        .section__header {
+            .section__text {
+                max-width: 724px;
+            }
+        }
+
+        .section__content {
+            display: flex;
+
+            background-color: $colors-primary;
+        }
+
+        .section__text-block {
+            max-width: 699px;
+
+            padding: 98px 64px;
+
+            color: $colors-secondary;
+        }
+
+        .section__event-title {
+            margin-bottom: 27px;
+
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $colors-title;
+        }
+
+        .section__text {
+            margin-bottom: 60px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 1.04;
         }
     }
 
