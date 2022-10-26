@@ -37,3 +37,27 @@ const swiper3 = new Swiper('.swiper--3', {
         prevEl: '.swiper-button-prev--3',
     },
 })
+
+const swiper4 = new Swiper('.swiper--4', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--4',
+        prevEl: '.swiper-button-prev--4',
+    },
+})
+
+const swiper5 = new Swiper('.swiper--5', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--5',
+        prevEl: '.swiper-button-prev--5',
+    },
+})
