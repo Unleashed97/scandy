@@ -109,10 +109,19 @@
     }
 
     &--faq {
+        background-repeat: no-repeat;
+
         .section__inner {
             margin-bottom: 67px;
         }
 
+        .section__header {
+            margin-bottom: 42px;
+        }
+    }
+
+    &--map {
+        padding-bottom: 57px;
         .section__header {
             margin-bottom: 42px;
         }
