@@ -1,0 +1,85 @@
+.card {
+    background-color: $colors-primary;
+    color: $colors-secondary;
+
+    &--house {
+        display: flex;
+
+        max-height: 491px;
+    }
+
+    &__text-block {
+        width: 50%;
+        padding: 0px 55px 63px;
+    }
+
+    &__header {
+        position: relative;
+
+        padding-top: 117px;
+    }
+
+    &__header-title-bg {
+        position: absolute;
+        top: -18px;
+        left: 0;
+
+        font-size: 177px;
+        font-weight: 500;
+        color: rgba(#b8c8dc, 0.2);
+    }
+
+    &__title {
+        margin-bottom: 27px;
+
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.18;
+        text-transform: uppercase;
+    }
+
+    &__row {
+        margin-bottom: 11 px;
+
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 16px;
+        font-weight: 300;
+
+        &--additional {
+            padding-bottom: 21px;
+            border-bottom: 1px solid #dbdbdb;
+
+            &:last-of-type {
+                border-bottom: 0;
+            }
+
+            .card__row-value b {
+                font-weight: 300;
+            }
+        }
+    }
+
+    &__row-caption {
+        max-width: 331px;
+    }
+
+    &__row-value {
+        width: 30%;
+        color: #acacac;
+
+        b {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.04;
+            color: #fc6834;
+        }
+    }
+
+    &__max-placement {
+        color: #acacac;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
