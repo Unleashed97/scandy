@@ -11,6 +11,8 @@
     background-position: center;
     background-size: cover;
 
+    animation: scale 10s forwards linear;
+
     &__inner {
         display: flex;
         flex-direction: column;
@@ -36,5 +38,15 @@
         line-height: 1.18;
         text-transform: uppercase;
         text-align: center;
+    }
+}
+
+@keyframes scale {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 105%;
     }
 }
