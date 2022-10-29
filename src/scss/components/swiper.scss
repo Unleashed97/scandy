@@ -4,6 +4,10 @@
             display: flex;
         }
     }
+
+    &--about-st {
+        margin: 0 30px;
+    }
 }
 
 .swiper-button-prev,
@@ -32,10 +36,38 @@
 
 .swiper-button-prev {
     left: 0;
+
+    &--about-st {
+        left: -68px;
+
+        width: 68px;
+        height: 68px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $colors-orange;
+        border-radius: 50%;
+    }
 }
 
 .swiper-button-next {
     right: 0;
+
+    &--about-st {
+        right: -68px;
+
+        width: 68px;
+        height: 68px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $colors-orange;
+        border-radius: 50%;
+    }
 
     img {
         transform: rotate(180deg);

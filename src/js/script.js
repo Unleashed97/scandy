@@ -61,3 +61,16 @@ const swiper5 = new Swiper('.swiper--5', {
         prevEl: '.swiper-button-prev--5',
     },
 })
+const swiperAboutSt = new Swiper('.swiper--about-st', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 4,
+    spaceBetween: 22,
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--about-st',
+        prevEl: '.swiper-button-prev--about-st',
+    },
+})

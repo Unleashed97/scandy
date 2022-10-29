@@ -8,6 +8,20 @@
         max-height: 491px;
     }
 
+    &--house-about {
+        flex-direction: column;
+        background: none;
+
+        .card__text-block {
+            width: 100%;
+            background-color: $colors-primary;
+        }
+
+        .card__image {
+            width: 100%;
+        }
+    }
+
     &--st {
         position: relative;
 
@@ -43,7 +57,8 @@
 
             transition: 0.3s linear;
 
-            &:hover {
+            &:hover,
+            &.active {
                 background-color: rgba(#e37a3e, 0.8);
             }
         }
@@ -73,6 +88,16 @@
             font-weight: 300;
 
             color: $colors-primary;
+        }
+
+        .card__image {
+            width: 100%;
+        }
+    }
+
+    &--about-st {
+        .card__image {
+            height: 422px;
         }
     }
 

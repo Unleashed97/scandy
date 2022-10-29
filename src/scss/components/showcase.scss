@@ -1,4 +1,14 @@
 .showcase {
+    &--about {
+        background: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-about.jpg');
+        min-height: 906px;
+    }
+
     min-height: 1278px;
 
     background: linear-gradient(
