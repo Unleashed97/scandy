@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Контакты</title>
+</head>
+
+<body>
+    <!-- header include -->
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="nav header__left">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Дома</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Цены</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Досуг</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Ресторан</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="logo header__logo">
+                <picture>
+                    <source srcset="img/logo/logo-header.webp">
+                    <img src="img/logo/logo-header.png" class="logo" alt="Логотип">
+                </picture>
+            </a>
+
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Мероприятия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn btn--orange header__btn">Забронировать</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- main -->
+    <main>
+        <!-- showcase -->
+        <div class="showcase showcase--about">
+            <div class="container">
+                <div class="showcase__inner">
+                    <h1 class="showcase__title">
+                        Загородный комплекс <br>
+                        <b>«ScandiEvent»</b>
+                    </h1>
+                    <p class="showcase__subtitle">КОНТАКТЫ</p>
+
+                    <form action="/" class="form">
+                        <p class="form__title">Бронирование
+                            номеров</p>
+
+
+                        <div class="form__group">
+                            <label for="input-check-in" class="form__label">Заезд</label>
+                            <input id="input-check-in" type="date" class="form__input">
+
+                        </div>
+
+                        <div class="form__group">
+                            <label for="input-check-out" class="form__label">Выезд</label>
+                            <input id="input-check-out" type="date" class="form__input">
+                        </div>
+
+
+                        <div class="form__group">
+                            <label for="input-guests" class="form__label">Гости</label>
+                            <input id="input-guests" type="text" class="form__input" value="2 взрослых, без детей">
+                        </div>
+
+                        <button type="submit" class="btn btn--light-blue form__btn">Показать</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end of showcase-->
+
+        <!-- section contacts -->
+        <section class="section section--contacts">
+            <div class="container">
+                <div class="section__inner">
+                    <article class="card card--contacts">
+                        <h5 class="card__title">Телефон</h5>
+                        <p class="card__text">Свяжитесь с нами по номеру телефона</p>
+
+                        <div class="card__footer">
+                            <a href="tel:+79521868808" class="card__footer-text">+7 (952) 186-88-08</a>
+                        </div>
+                    </article>
+                    <article class="card card--contacts">
+                        <h5 class="card__title">VK</h5>
+                        <p class="card__text">Пишите нам в официальную групппу вконтакте</p>
+
+                        <div class="card__footer">
+                            <a href="https://vk.com/scandievent" class="card__footer-text">
+                                https://vk.com/scandievent</a>
+                        </div>
+                    </article>
+                    <article class="card card--contacts">
+                        <h5 class="card__title">instagram</h5>
+                        <p class="card__text">Пишите нам в instagram</p>
+
+                        <div class="card__footer">
+                            <a href="https://www.instagram.com/scandievent" class="card__footer-text">@scandievent</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> <!-- end of section contacts-->
+
+        <!-- section feedback -->
+        <div class="container container--lg">
+            <section class="section section--feedback">
+                <div class="container">
+                    <div class="section__inner">
+                        <div class="section__header">
+                            <span class="section__header-title-bg">Напиши нам</span>
+                            <h2 class="section__title">Форма обратной связи</h2>
+                        </div>
+                        <div class="section__content">
+                            <form action="/" class="form--feedback">
+                                <div class="form__group">
+                                    <input type="text" class="form__input" name="name" placeholder="Анастасия" required>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" name="email" placeholder="Email*" required>
+                                </div>
+                                <div class="form__group">
+                                    <input type="tel" class="form__input" name="tel" placeholder="Номер телефона*"
+                                        required>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" name="desc"
+                                        placeholder="Расскажите о вашем проекте" required>
+                                </div>
+
+                                <button type="submit" class="btn btn--orange form__btn">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section map -->
+                <section class="section section--contacts-map">
+                    <div class="container">
+                        <div class="section__inner">
+                            <div class="section__header">
+                                <span class="section__header-title-bg">Контакты</span>
+                                <h2 class="section__title">Где мы находимся</h2>
+                            </div>
+                            <div class="section__content">
+                                <div id="map" class="map map--contacts" style="width: 100%; height: 495px">
+                                    <div class="map__text-block">
+                                        <p class="map__text">
+                                            <b class="map__caption">
+                                                Адрес:
+                                            </b>
+
+                                            <br>
+
+                                            Тульская область, г.Советск. ул. Лесная
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- end of section map-->
+            </section>
+        </div> <!-- end of section feedback-->
+    </main>
+
+    <!-- footer include -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="index.html" class="logo footer__logo">
+                <picture>
+                    <source srcset="img/logo/logo-footer.webp">
+                    <img src="img/logo/logo-footer.png" alt="логотип">
+                </picture>
+            </a>
+
+            <div class="socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="https://vk.com/scandievent" class="socials__link">
+                            <img src="img/icons/vk.png" alt="вконтакте">
+                            https://vk.com/scandievent
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="https://www.instagram.com/scandievent/" class="socials__link">
+                            <img src="img/icons/inst.png" alt="инстаграм">
+                            @scandievent
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__administrator-contacts">
+                <p class="footer__caption">
+                    Телефон администратора:
+                </p>
+
+                <a href="tel:+79521868808">
+                    +7 (952) 186-88-08
+                </a>
+            </div>
+
+            <a href="privacy-policy.pdf">Политика конфиденциальности</a>
+
+            <button type="button" class="footer__scroll-up">
+                <img src="img/icons/chevron-back.svg" alt="">
+                <span>Наверх</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- scripts -->
+
+    <!-- Подключаем API Яндекс карт внутри тега head -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <!-- Настраиваем карту через JavaScript -->
+    <script type="text/javascript">
+        //создаем переменные "Карта" и "Метка"
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        //Инициализируем нашу карту, задав ей координаты, устанавливаем масштаб карты
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [53.930000, 37.627590],
+                zoom: 14,
+            });
+
+            //Пишем свойства для нашей метки
+            myPlacemark = new ymaps.Placemark([53.929326, 37.627584], {
+                hintContent: '',
+                balloonContent: ''
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета. Показываем что это изображение.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки. Указываем путь до картинки
+                iconImageHref: 'img/icons/marker.png',
+                // Размеры метки. 
+                iconImageSize: [39, 46],
+                // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+                iconImageOffset: [-30, -30]
+            });
+            //Добавляем метку на карту + убираем скролл мышкой 
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable('scrollZoom');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>

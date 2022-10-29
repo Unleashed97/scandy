@@ -66,4 +66,43 @@
         width: 226px;
         height: 74px;
     }
+
+    &--feedback {
+        width: 100%;
+
+        .form__group {
+            margin-bottom: 30px;
+
+            &:nth-last-of-type(2) {
+                margin-bottom: 70px;
+            }
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 77px;
+            }
+        }
+
+        .form__input {
+            width: 100%;
+
+            padding: 13px 26px;
+
+            font-size: 22px;
+
+            background: none;
+            border-bottom: 1px solid $colors-orange;
+
+            &::placeholder {
+                color: $colors-secondary;
+            }
+        }
+
+        .form__btn {
+            width: 285px;
+            margin-left: auto;
+
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
 }

@@ -101,6 +101,46 @@
         }
     }
 
+    &--contacts {
+        padding: 72px 46px 77px 55px;
+
+        display: flex;
+        flex-direction: column;
+
+        .card__title {
+            margin-bottom: 19px;
+
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.18;
+            color: $colors-title;
+        }
+
+        .card__text {
+            flex: 1 0 0;
+            margin-bottom: 25px;
+
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.04;
+            color: $colors-secondary;
+        }
+
+        .card__footer {
+            padding-top: 26px;
+
+            border-top: 1px solid #dbdbdb;
+        }
+
+        .card__footer-text {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.04;
+
+            color: #acacac;
+        }
+    }
+
     &__btn {
         font-size: 18px;
         font-weight: 400;

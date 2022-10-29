@@ -1,6 +1,14 @@
 .map {
+    position: relative;
+
+    &--contacts {
+        .map__text-block {
+            bottom: 95px;
+        }
+    }
     &__text-block {
         position: absolute;
+        z-index: 1;
         bottom: 120px;
         left: 50%;
 
