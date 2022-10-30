@@ -22,6 +22,59 @@
         }
     }
 
+    &--house-details {
+        display: flex;
+        min-height: 507px;
+
+        .card__header {
+            padding-top: 13px;
+        }
+
+        .swiper {
+            width: 50%;
+        }
+
+        .card__text-block {
+            padding-bottom: 0;
+        }
+
+        .card__icons-block {
+            margin: 14px -28px 0 -16px;
+
+            display: flex;
+            gap: 40px;
+
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.04;
+        }
+
+        .card__icons-block-left,
+        .card__icons-block-right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .card__icons-block-left {
+            min-width: 294px;
+        }
+
+        .card__icons-block-right {
+            min-width: 200px;
+            padding-top: 7px;
+        }
+
+        .card__icons-block-item {
+            display: flex;
+            gap: 16px;
+        }
+
+        .card__icons-block-item-icon {
+            height: 26px;
+        }
+    }
+
     &--st {
         position: relative;
 
@@ -155,6 +208,12 @@
     &__text-block {
         width: 50%;
         padding: 0px 55px 63px;
+
+        hr {
+            max-width: 507px;
+            margin: 0 auto 20px 0;
+            border-top: 1px solid #dbdbdb;
+        }
     }
 
     &__header {
@@ -187,13 +246,13 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         font-size: 16px;
         font-weight: 300;
 
         &--additional {
-            padding-bottom: 21px;
-            border-bottom: 1px solid #dbdbdb;
+            margin-bottom: 11px;
 
             &:last-of-type {
                 border-bottom: 0;
@@ -202,6 +261,10 @@
             .card__row-value b {
                 font-weight: 300;
             }
+        }
+
+        &:nth-last-of-type(1) {
+            padding: 0;
         }
     }
 

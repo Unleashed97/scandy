@@ -7,6 +7,38 @@
             ),
             url('../img/showcase/bg-about.jpg');
         min-height: 906px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &--contacts {
+        background: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-contacts.jpg');
+
+        min-height: 740px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--mini {
+        background: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-mini.jpg');
+
+        min-height: 914px;
+
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     min-height: 1278px;
