@@ -10,10 +10,24 @@
 
     &__inner {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
-        align-items: center;
 
         color: $colors-title;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__logo {
+        margin-right: 122px;
+    }
+
+    &__socials {
+        margin-right: 80px;
     }
 
     &__caption {
@@ -22,6 +36,7 @@
 
     &__scroll-up {
         padding: 10px;
+        margin-left: 78px;
 
         display: flex;
         flex-direction: column;
