@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Сфера 3"
+})
+
+<body>
+    <!-- header include -->
+    @@include('html/partials/header.html')
+
+    <!-- main -->
+    <main>
+        <!-- showcase -->
+        <div class="showcase showcase--mini">
+            <div class="container">
+                <div class="showcase__inner">
+                    <h1 class="showcase__title">
+                        Загородный комплекс <br>
+                        <b>«ScandiEvent»</b>
+                    </h1>
+                    <p class="showcase__subtitle">Сфера 3</p>
+
+                    <form action="/" class="form">
+                        <p class="form__title">Бронирование
+                            номеров</p>
+
+
+                        <div class="form__group">
+                            <label for="input-check-in" class="form__label">Заезд</label>
+                            <input id="input-check-in" type="date" class="form__input">
+
+                        </div>
+
+                        <div class="form__group">
+                            <label for="input-check-out" class="form__label">Выезд</label>
+                            <input id="input-check-out" type="date" class="form__input">
+                        </div>
+
+
+                        <div class="form__group">
+                            <label for="input-guests" class="form__label">Гости</label>
+                            <input id="input-guests" type="text" class="form__input" value="2 взрослых, без детей">
+                        </div>
+
+                        <button type="submit" class="btn btn--light-blue form__btn">Показать</button>
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end of showcase-->
+
+        <!-- section house details -->
+        <section class="section section--house-details">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__header">
+                        <span class="section__header-title-bg">Подробнее</span>
+                        <h2 class="section__title">Подробнее</h2>
+                    </div>
+                    <div class="section__content">
+                        <article class="card card--house-details">
+                            <div class="swiper swiper--2">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/section/house-details/mini.webp">
+                                            <img src="img/section/house-details/mini.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="img/section/house-details/mini.webp">
+                                            <img src="img/section/house-details/mini.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev swiper-button-prev--2">
+                                    <img src="img/icons/chevron-back.svg" alt="">
+                                </div>
+                                <div class="swiper-button-next swiper-button-next--2">
+                                    <img src="img/icons/chevron-back.svg" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="card__text-block">
+                                <div class="card__header">
+                                    <h3 class="card__title">Сфера 3
+
+                                    </h3>
+                                </div>
+
+                                <div class="card__row">
+                                    <span class="card__row-caption">в будни при базовом размещении 2 взр </span>
+
+                                    <span class="card__row-value"> <b>10000</b> руб./сутки</span>
+                                </div>
+                                <hr>
+
+                                <div class="card__row">
+                                    <span class="card__row-caption">в выходные и праздничные дни при базовом размещении
+                                        2 взр
+
+                                        <br>
+
+                                    </span>
+
+                                    <span class="card__row-value"><b>12000</b> руб./сутки</span>
+                                </div>
+
+                                <p class="card__max-placement">*Горячая купель входит в стоимость. Повторная топка 1500
+                                    руб.
+
+                                </p>
+
+                                <div class="card__icons-block">
+                                    <div class="card__icons-block-left">
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            90 м.кв
+                                        </div>
+
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            чайный уголок (микроволновка, холодильник, чайник, посуда для сервировки);
+
+                                        </div>
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            чайные наборы (вода, чай черный, зеленый, кофе, сливки);
+
+                                        </div>
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            ванная комната с душевой кабиной, полотенцами, халатами, тапочками, ванными
+                                            принадлежностями;
+                                        </div>
+                                    </div>
+                                    <div class="card__icons-block-right">
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            купель на подиуме над водой;
+                                        </div>
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            кровать queen-size;
+                                        </div>
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            терраса над водохранилищем, уличная мебель, пледы.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+
+                        <p class="section__text">
+                            Scandi - загородный комплекс в Тульской области, где о будничной суматохе точно придется
+                            забыть. Оборудованная территория, свежий воздух и завораживающие закаты ждут гостей на
+                            берегу водохранилища. Здесь можно отдохнуть в выходные, провести отпуск или устроить
+                            мероприятие с размахом, которое точно запомнится всем приглашенным.
+                            Scandi - загородный комплекс в Тульской области, где о будничной суматохе точно придется
+                            забыть. Оборудованная территория, свежий воздух и завораживающие закаты ждут гостей на
+                            берегу водохранилища. Здесь можно отдохнуть в выходные, провести отпуск или устроить
+                            мероприятие с размахом, которое точно запомнится всем приглашенным.
+                            Scandi - загородный комплекс в Тульской области, где о будничной суматохе точно придется
+                            забыть. Оборудованная территория, свежий воздух и завораживающие закаты ждут гостей на
+                            берегу водохранилища. Здесь можно отдохнуть в выходные, провести отпуск или устроить
+                            мероприятие с размахом, которое точно запомнится всем приглашенным.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end of section house details-->
+
+
+        <!-- section spend time -->
+        <section class="section section--about-st">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__header">
+                        <span class="section__header-title-bg">Как провести время?</span>
+                        <h2 class="section__title">Как провести время?</h2>
+                    </div>
+
+                    <div class="section__content">
+
+                        <!-- Slider main container -->
+                        <div class="swiper swiper--about-st">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="card card--st card--about-st">
+                                        <picture>
+                                            <source srcset="img/section/spend-time/4.webp">
+                                            <img src="img/section/spend-time/4.jpg" class="card__image" alt="">
+                                        </picture>
+
+                                        <div class="card__text-block">
+                                            <a href='#' class="card__title">Банный комплекс «Жара»</a>
+                                            <p class="card__text">В отеле вас ждет еще одно настоящее место силы –
+                                                настоящая русская
+                                                баня!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card card--st card--about-st">
+                                        <picture>
+                                            <source srcset="img/section/spend-time/4.webp">
+                                            <img src="img/section/spend-time/4.jpg" class="card__image" alt="">
+                                        </picture>
+
+                                        <div class="card__text-block">
+                                            <a href="#" class="card__title">Активный отдых
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card card--st card--about-st">
+                                        <picture>
+                                            <source srcset="img/section/spend-time/5.webp">
+                                            <img src="img/section/spend-time/5.jpg" class="card__image" alt="">
+                                        </picture>
+
+                                        <div class="card__text-block">
+                                            <a href='#' class="card__title">Водные развлечения</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card card--st card--about-st">
+                                        <picture>
+                                            <source srcset="img/section/spend-time/5.webp">
+                                            <img src="img/section/spend-time/5.jpg" class="card__image" alt="">
+                                        </picture>
+
+                                        <div class="card__text-block">
+                                            <a href="#" class="card__title">Scandi зимой</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-prev--about-st">
+                            <img src="img/icons/chevron-back.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next swiper-button-next--about-st">
+                            <img src="img/icons/chevron-back.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section> <!-- end of section spend time-->
+    </main>
+
+    <!-- footer include -->
+    @@include('html/partials/footer.html')
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
