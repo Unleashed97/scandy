@@ -2,63 +2,13 @@
 <html lang="ru">
 
 <!-- head include -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>А-Фрейм Мини</title>
-</head>
+@@include('html/partials/head.html', {
+"title": "Опти"
+})
 
 <body>
     <!-- header include -->
-    <header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <nav class="nav header__left">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="houses.html" class="nav__link">Дома</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Цены</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Досуг</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#" class="nav__link">Ресторан</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <a href="index.html" class="logo header__logo">
-                <picture>
-                    <source srcset="img/logo/logo-header.webp">
-                    <img src="img/logo/logo-header.png" class="logo" alt="Логотип">
-                </picture>
-            </a>
-
-            <div class="header__right">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Мероприятия</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="contacts.html" class="nav__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button type="button" class="btn btn--orange header__btn">Забронировать</button>
-            </div>
-        </div>
-    </div>
-</header>
+    @@include('html/partials/header.html')
 
     <!-- main -->
     <main>
@@ -70,7 +20,7 @@
                         Загородный комплекс <br>
                         <b>«ScandiEvent»</b>
                     </h1>
-                    <p class="showcase__subtitle">А-Фрейм Мини</p>
+                    <p class="showcase__subtitle">Опти</p>
 
                     <form action="/" class="form">
                         <p class="form__title">Бронирование
@@ -140,7 +90,7 @@
 
                             <div class="card__text-block">
                                 <div class="card__header">
-                                    <h3 class="card__title">А-Фрейм Мини
+                                    <h3 class="card__title">Опти
 
                                     </h3>
                                 </div>
@@ -149,7 +99,7 @@
                                     <span class="card__row-caption">в будни при базовом размещении 2 взр+реб.
                                         Без использования доп.спального места. </span>
 
-                                    <span class="card__row-value"> <b>6000</b> руб./сутки</span>
+                                    <span class="card__row-value"> <b>7000</b> руб./сутки</span>
                                 </div>
                                 <div class="card__row card__row--additional">
                                     <span class="card__row-caption">Доп.спальное место (раскладной диван)</span>
@@ -166,7 +116,7 @@
 
                                     </span>
 
-                                    <span class="card__row-value"><b>8000</b> руб./сутки</span>
+                                    <span class="card__row-value"><b>9000</b> руб./сутки</span>
                                 </div>
 
                                 <div class="card__row card__row--additional">
@@ -180,12 +130,16 @@
                                     <div class="card__icons-block-left">
                                         <div class="card__icons-block-item">
                                             <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
-                                            36 м.кв
+                                            54 м.кв
                                         </div>
                                         <div class="card__icons-block-item">
                                             <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
                                             мини-кухня (плита, микроволновка, холодильник, чайник, посуда для
                                             приготовления и сервировки)
+                                        </div>
+                                        <div class="card__icons-block-item">
+                                            <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
+                                            качели
                                         </div>
                                         <div class="card__icons-block-item">
                                             <img src="img/icons/kitchen.png" class="card__icons-block-item-icon" alt="">
@@ -325,52 +279,7 @@
     </main>
 
     <!-- footer include -->
-    <footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <a href="index.html" class="logo footer__logo">
-                <picture>
-                    <source srcset="img/logo/logo-footer.webp">
-                    <img src="img/logo/logo-footer.png" alt="логотип">
-                </picture>
-            </a>
-
-            <div class="socials">
-                <ul class="socials__list">
-                    <li class="socials__item">
-                        <a href="https://vk.com/scandievent" class="socials__link">
-                            <img src="img/icons/vk.png" alt="вконтакте">
-                            https://vk.com/scandievent
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="https://www.instagram.com/scandievent/" class="socials__link">
-                            <img src="img/icons/inst.png" alt="инстаграм">
-                            @scandievent
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__administrator-contacts">
-                <p class="footer__caption">
-                    Телефон администратора:
-                </p>
-
-                <a href="tel:+79521868808">
-                    +7 (952) 186-88-08
-                </a>
-            </div>
-
-            <a href="privacy-policy.pdf">Политика конфиденциальности</a>
-
-            <button type="button" class="footer__scroll-up">
-                <img src="img/icons/chevron-back.svg" alt="">
-                <span>Наверх</span>
-            </button>
-        </div>
-    </div>
-</footer>
+    @@include('html/partials/footer.html')
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
