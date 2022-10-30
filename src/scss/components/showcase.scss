@@ -18,6 +18,10 @@
         background-size: cover;
     }
 
+    @media (max-width: $sm) {
+        height: fit-content;
+    }
+
     &--about {
         background: linear-gradient(
                 rgba(#1d1d1d, 0.4) 53%,
@@ -70,6 +74,19 @@
         flex-direction: column;
         align-items: center;
         padding-top: 310px;
+
+        @media (max-width: $lg) {
+            padding-top: 200px;
+        }
+
+        @media (max-width: $md) {
+            padding-top: 150px;
+        }
+
+        @media (max-width: $sm) {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
     }
 
     &__title {

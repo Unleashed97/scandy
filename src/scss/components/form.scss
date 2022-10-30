@@ -12,11 +12,36 @@
 
     padding: 47px 74px 45px 64px;
 
+    @media (max-width: 1600px) {
+        justify-content: center;
+        padding: 30px;
+    }
+
+    @media (max-width: $sm) {
+        padding: 15px 10px;
+    }
+
+    @media (max-width: $xl) {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media (max-width: $lg) {
+        width: fit-content;
+    }
+
     &__title {
-        max-width: 189px;
         font-size: 28px;
         line-height: 0.94;
-        margin-right: -14px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 22px;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
     }
 
     &__group {
@@ -65,6 +90,15 @@
     &__btn {
         width: 226px;
         height: 74px;
+    }
+
+    #input-check-in,
+    #input-check-out,
+    #input-guests,
+    &__btn {
+        @media (max-width: $lg) {
+            width: 290px;
+        }
     }
 
     &--feedback {

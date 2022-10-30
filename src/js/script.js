@@ -1,6 +1,7 @@
 import * as customFunctions from './modules/functions.js'
 customFunctions.scrollToTop()
 customFunctions.handleTabs()
+customFunctions.handleBurgerMenu()
 
 // vendors
 const swiper1 = new Swiper('.swiper--1', {

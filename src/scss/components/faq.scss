@@ -16,6 +16,15 @@
         &:last-child {
             margin-bottom: 0;
         }
+
+        @media (max-width: $sm) {
+            padding: 0 15px;
+        }
+    }
+
+    &__panel-icon {
+        width: 68px;
+        height: 68px;
     }
 
     &__panel-top {

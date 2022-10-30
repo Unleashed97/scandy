@@ -23,28 +23,29 @@
                     <p class="showcase__subtitle">Увидеть один раз, влюбиться навсегда</p>
 
                     <form action="/" class="form">
-                        <p class="form__title">Бронирование
-                            номеров</p>
+                        <h5 class="form__title">Бронирование
+                            номеров</h5>
+
+                        <div class="form__content">
+                            <div class="form__group">
+                                <label for="input-check-in" class="form__label">Заезд</label>
+                                <input id="input-check-in" type="date" class="form__input">
+
+                            </div>
+
+                            <div class="form__group">
+                                <label for="input-check-out" class="form__label">Выезд</label>
+                                <input id="input-check-out" type="date" class="form__input">
+                            </div>
 
 
-                        <div class="form__group">
-                            <label for="input-check-in" class="form__label">Заезд</label>
-                            <input id="input-check-in" type="date" class="form__input">
+                            <div class="form__group">
+                                <label for="input-guests" class="form__label">Гости</label>
+                                <input id="input-guests" type="text" class="form__input" value="2 взрослых, без детей">
+                            </div>
 
+                            <button type="submit" class="btn btn--light-blue form__btn">Показать</button>
                         </div>
-
-                        <div class="form__group">
-                            <label for="input-check-out" class="form__label">Выезд</label>
-                            <input id="input-check-out" type="date" class="form__input">
-                        </div>
-
-
-                        <div class="form__group">
-                            <label for="input-guests" class="form__label">Гости</label>
-                            <input id="input-guests" type="text" class="form__input" value="2 взрослых, без детей">
-                        </div>
-
-                        <button type="submit" class="btn btn--light-blue form__btn">Показать</button>
                     </form>
                 </div>
             </div>
@@ -58,6 +59,7 @@
                         <source srcset="img/section/about/image.webp">
                         <img src="img/section/about/image.jpg" class="section__image" alt="">
                     </picture>
+
                     <div class="section__text-block">
                         <div class="section__header">
                             <span class="section__header-title-bg">О нас</span>
@@ -73,6 +75,7 @@
 
                         <button type="button" class="btn btn--orange section__btn">Подробнее</button>
                     </div>
+
                 </div>
             </div>
         </section> <!-- end of section about-->

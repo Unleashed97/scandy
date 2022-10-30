@@ -48,6 +48,12 @@ img {
     height: auto;
 }
 
+.fixed {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';

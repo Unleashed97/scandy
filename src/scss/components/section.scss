@@ -3,15 +3,32 @@
         .section__inner {
             display: flex;
             gap: 60px;
+
+            @media (max-width: $lg) {
+                flex-direction: column;
+            }
         }
 
         .section__text-block {
-            width: 50%;
+            width: 40%;
+
+            @media (max-width: $lg) {
+                padding: 0 15px;
+                width: 100%;
+            }
+        }
+
+        .section__header-title-bg {
+            font-size: 120px;
         }
 
         .section__title {
             max-width: 465px;
             margin-bottom: 20px;
+
+            @media (max-width: $lg) {
+                max-width: 100%;
+            }
         }
 
         .section__text {
@@ -21,6 +38,10 @@
 
         .section__image {
             height: 100%;
+
+            @media (max-width: $lg) {
+                width: 100%;
+            }
         }
     }
 
@@ -33,6 +54,16 @@
         .section__btn {
             margin: 0 auto;
             margin-top: 48px;
+        }
+
+        .section__header-title-bg {
+            @media (max-width: $lg) {
+                font-size: 100px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 70px;
+            }
         }
 
         .swiper {
@@ -80,6 +111,26 @@
         .section__header-title-bg {
             font-size: 150px;
             line-height: 0.89;
+
+            @media (max-width: $xl) {
+                top: -80px;
+            }
+
+            @media (max-width: $lg) {
+                font-size: 100px;
+                top: -60px;
+                line-height: 0.8;
+            }
+
+            @media (max-width: $md) {
+                font-size: 90px;
+                top: -80px;
+                line-height: 0.8;
+            }
+
+            @media (max-width: $sm) {
+                display: none;
+            }
         }
 
         .section__content {
@@ -89,6 +140,20 @@
             grid-template-columns: 352px 307px 317px 357px;
             grid-template-rows: 267px 422px;
             gap: 22px;
+
+            @media (max-width: $xl) {
+                grid-template-columns: 352px 317px;
+                grid-template-rows: 267px 422px 267px 422px;
+
+                place-content: center;
+
+                max-height: 100%;
+            }
+
+            @media (max-width: $md) {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
         }
     }
 
@@ -125,6 +190,16 @@
             }
         }
 
+        .section__header-title-bg {
+            @media (max-width: $lg) {
+                font-size: 80px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 60px;
+            }
+        }
+
         .section__title {
             margin-bottom: 20px;
         }
@@ -141,6 +216,18 @@
             padding: 98px 64px;
 
             color: $colors-secondary;
+
+            @media (max-width: $xl) {
+                max-width: 80%;
+            }
+
+            @media (max-width: $md) {
+                max-width: 100%;
+            }
+
+            @media (max-width: $sm) {
+                padding: 15px;
+            }
         }
 
         .section__event-title {
@@ -157,6 +244,19 @@
             font-weight: 300;
             font-size: 20px;
             line-height: 1.04;
+        }
+
+        picture {
+            height: fit-content;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: $xl) {
+                flex-direction: column;
+            }
         }
     }
 
@@ -337,7 +437,6 @@
 
         @media (max-width: $md) {
             font-size: 90px;
-            top: 0;
             line-height: 0.8;
         }
 
