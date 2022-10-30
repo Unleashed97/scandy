@@ -160,6 +160,10 @@
         display: flex;
         flex-direction: column;
 
+        @media (max-width: $sm) {
+            padding: 20px;
+        }
+
         .card__title {
             margin-bottom: 19px;
 
@@ -191,6 +195,10 @@
             line-height: 1.04;
 
             color: #acacac;
+
+            @media (max-width: $sm) {
+                font-size: 18px;
+            }
         }
     }
 

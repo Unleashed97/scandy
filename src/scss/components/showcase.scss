@@ -1,4 +1,23 @@
 .showcase {
+    height: 1278px;
+
+    background: linear-gradient(
+            rgba(#1d1d1d, 0.4) 53%,
+            rgba(#1d1d1d, 25%) 90%,
+            rgba(#1d1d1d, 8%)
+        ),
+        url('../img/showcase/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    animation: scale 10s forwards linear;
+
+    @media (max-width: $xl) {
+        animation: none;
+
+        background-size: cover;
+    }
+
     &--about {
         background: linear-gradient(
                 rgba(#1d1d1d, 0.4) 53%,
@@ -21,10 +40,15 @@
             ),
             url('../img/showcase/bg-contacts.jpg');
 
-        min-height: 740px;
+        height: 740px;
 
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+
+        .showcase__inner {
+            padding-top: 250px;
+        }
     }
 
     &--mini {
@@ -41,20 +65,6 @@
         background-position: center;
     }
 
-    min-height: 1278px;
-
-    background: linear-gradient(
-            rgba(#1d1d1d, 0.4) 53%,
-            rgba(#1d1d1d, 25%) 90%,
-            rgba(#1d1d1d, 8%)
-        ),
-        url('../img/showcase/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    animation: scale 10s forwards linear;
-
     &__inner {
         display: flex;
         flex-direction: column;
@@ -63,10 +73,22 @@
     }
 
     &__title {
+        margin-bottom: 30px;
+
         font-size: 80px;
+        font-weight: 500;
         line-height: 1.18;
+
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: $md) {
+            font-size: 50px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 30px;
+        }
 
         b {
             font-weight: 700;

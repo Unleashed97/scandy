@@ -10,9 +10,16 @@
     background-color: rgba(#1d1d1d, 0.2);
 
     &__inner {
+    }
+
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $lg) {
+            display: none;
+        }
     }
 
     &__left .nav__list {
@@ -26,6 +33,10 @@
         z-index: 1;
 
         transform: translate(-50%);
+
+        @media (max-width: $lg) {
+            display: none;
+        }
     }
 
     &__right {
