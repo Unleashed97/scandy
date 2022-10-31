@@ -98,16 +98,44 @@
         display: flex;
         min-height: 507px;
 
+        @media (max-width: $xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
         .card__header {
             padding-top: 13px;
         }
 
         .swiper {
             width: 50%;
+
+            @media (max-width: 900px) {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
 
         .card__text-block {
             padding-bottom: 0;
+
+            @media (max-width: $xl) {
+                padding-bottom: 20px;
+            }
+            @media (max-width: $lg) {
+                width: 70%;
+            }
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+
+            @media (max-width: $md) {
+                padding: 20px;
+            }
         }
 
         .card__icons-block {
@@ -119,6 +147,15 @@
             font-size: 16px;
             font-weight: 300;
             line-height: 1.04;
+
+            @media (max-width: $md) {
+                margin: 20px 0;
+            }
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
 
         .card__icons-block-left,
@@ -129,12 +166,31 @@
         }
 
         .card__icons-block-left {
-            min-width: 294px;
+            // min-width: 294px;
+            width: 80%;
+
+            @media (max-width: $md) {
+                width: 70%;
+            }
+
+            @media (max-width: $sm) {
+                width: 100%;
+            }
         }
 
         .card__icons-block-right {
             min-width: 200px;
             padding-top: 7px;
+
+            @media (max-width: $md) {
+                min-width: 0;
+                width: 30%;
+            }
+
+            @media (max-width: $sm) {
+                padding-top: 0;
+                width: 100%;
+            }
         }
 
         .card__icons-block-item {
@@ -408,6 +464,10 @@
         width: 30%;
         min-width: 120px;
         color: #acacac;
+
+        @media (max-width: $sm) {
+            max-width: 70px;
+        }
 
         b {
             font-size: 32px;

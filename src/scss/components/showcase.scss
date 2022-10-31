@@ -1,5 +1,5 @@
 .showcase {
-    height: 1278px;
+    min-height: 1278px;
 
     background: linear-gradient(
             rgba(#1d1d1d, 0.4) 53%,
@@ -10,16 +10,10 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    animation: scale 10s forwards linear;
-
-    @media (max-width: $xl) {
-        animation: none;
-
-        background-size: cover;
-    }
+    // animation: scale 10s forwards linear;
 
     @media (max-width: $sm) {
-        height: fit-content;
+        min-height: fit-content;
     }
 
     &--about {
@@ -44,7 +38,7 @@
             ),
             url('../img/showcase/bg-contacts.jpg');
 
-        height: 740px;
+        min-height: 740px;
 
         background-repeat: no-repeat;
         background-position: center;
@@ -66,6 +60,7 @@
         min-height: 914px;
 
         background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
     }
 
@@ -74,6 +69,7 @@
         flex-direction: column;
         align-items: center;
         padding-top: 310px;
+        padding-bottom: 40px;
 
         @media (max-width: $lg) {
             padding-top: 200px;

@@ -101,6 +101,16 @@
             margin-bottom: 60px;
         }
 
+        .section__header-title-bg {
+            @media (max-width: $lg) {
+                font-size: 100px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 80px;
+            }
+        }
+
         .section__text {
             margin-top: 62px;
 
@@ -486,6 +496,10 @@
         font-size: 24px;
         font-weight: 300;
         color: $colors-secondary;
+
+        @media (max-width: $sm) {
+            font-size: 18px !important;
+        }
     }
 
     &__btn {
