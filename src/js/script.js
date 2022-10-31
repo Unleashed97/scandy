@@ -69,6 +69,33 @@ const swiperAboutSt = new Swiper('.swiper--about-st', {
     spaceBetween: 22,
     loop: true,
 
+    breakpoints: {
+        // when window width is >= 320px
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+
+        999: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
+
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next--about-st',

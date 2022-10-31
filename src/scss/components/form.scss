@@ -22,12 +22,9 @@
     }
 
     @media (max-width: $xl) {
+        width: fit-content;
         flex-direction: column;
         gap: 30px;
-    }
-
-    @media (max-width: $lg) {
-        width: fit-content;
     }
 
     &__title {
@@ -96,7 +93,7 @@
     #input-check-out,
     #input-guests,
     &__btn {
-        @media (max-width: $lg) {
+        @media (max-width: $xl) {
             width: 290px;
         }
     }

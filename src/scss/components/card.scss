@@ -58,12 +58,6 @@
                 margin-top: 20px;
                 position: static;
             }
-
-            .card__row-value {
-                b {
-                    font-size: 20px;
-                }
-            }
         }
     }
 
@@ -71,9 +65,28 @@
         flex-direction: column;
         background: none;
 
+        @media (max-width: $lg) {
+            width: 70%;
+        }
+
+        @media (max-width: 999px) {
+            width: 100%;
+        }
+
+        @media (max-width: $sm) {
+            .card__btn {
+                width: 50%;
+                margin-top: 30px;
+            }
+        }
+
         .card__text-block {
             width: 100%;
             background-color: $colors-primary;
+
+            @media (max-width: 999px) {
+                padding: 0 20px 20px;
+            }
         }
 
         .card__image {
@@ -401,6 +414,10 @@
             font-weight: 700;
             line-height: 1.04;
             color: #fc6834;
+
+            @media (max-width: $sm) {
+                font-size: 20px;
+            }
         }
     }
 
