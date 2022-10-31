@@ -16,6 +16,18 @@
     background: none;
     cursor: pointer;
 
+    &.active {
+        .burger__item:nth-child(1) {
+            transform: translateY(11px) rotate(45deg);
+        }
+        .burger__item:nth-child(2) {
+            opacity: 0;
+        }
+        .burger__item:nth-child(3) {
+            transform: translateY(-11px) rotate(135deg);
+        }
+    }
+
     @media (max-width: $lg) {
         display: block;
     }
@@ -28,6 +40,9 @@
         margin-bottom: 8px;
 
         background-color: $colors-primary;
+        border-radius: 5px;
+
+        transition: 0.3s linear;
 
         &:last-child {
             margin-bottom: 0;
