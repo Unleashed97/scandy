@@ -122,7 +122,7 @@
         }
 
         .swiper {
-            width: 50%;
+            width: 65%;
 
             @media (max-width: 900px) {
                 width: 100%;
@@ -134,7 +134,8 @@
         }
 
         .card__text-block {
-            padding-bottom: 0;
+            width: 45%;
+            padding-bottom: 30px;
 
             @media (max-width: $xl) {
                 padding-bottom: 20px;
@@ -152,8 +153,7 @@
         }
 
         .card__icons-block {
-            margin: 14px -28px 0 -16px;
-
+            margin-top: 20px;
             display: flex;
             gap: 40px;
 
@@ -193,7 +193,6 @@
 
         .card__icons-block-right {
             min-width: 200px;
-            padding-top: 7px;
 
             @media (max-width: $md) {
                 min-width: 0;

@@ -16,15 +16,15 @@ const swiper1 = new Swiper('.swiper--1', {
     },
 })
 
-const swiper2 = new Swiper('.swiper--2', {
+const swiper2 = new Swiper('.swiper--house-details', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next--2',
-        prevEl: '.swiper-button-prev--2',
+        nextEl: '.swiper-button-next--house-details',
+        prevEl: '.swiper-button-prev--house-details',
     },
 })
 const swiper3 = new Swiper('.swiper--3', {
