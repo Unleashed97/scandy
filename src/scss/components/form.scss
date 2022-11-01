@@ -104,10 +104,6 @@
         .form__group {
             margin-bottom: 30px;
 
-            &:nth-last-of-type(2) {
-                margin-bottom: 70px;
-            }
-
             &:nth-last-of-type(1) {
                 margin-bottom: 77px;
             }
@@ -122,7 +118,7 @@
             // font-size: 22px;
 
             background: none;
-            border-bottom: 1px solid $colors-orange;
+            border: 1px solid $colors-secondary;
 
             &::placeholder {
                 color: $colors-secondary;
