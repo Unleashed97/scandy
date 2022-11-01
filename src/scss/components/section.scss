@@ -127,20 +127,20 @@
         .section__header-title-bg {
             font-size: 150px;
             line-height: 0.89;
+            top: -140px;
 
             @media (max-width: $xl) {
-                top: -80px;
+                font-size: 120px;
+                top: -100px;
             }
-
             @media (max-width: $lg) {
                 font-size: 100px;
-                top: -60px;
-                line-height: 0.8;
+                top: -80px;
             }
 
             @media (max-width: $md) {
                 font-size: 90px;
-                top: -80px;
+                top: -100px;
                 line-height: 0.8;
             }
 
@@ -177,6 +177,7 @@
         .section__header-title-bg {
             font-size: 150px;
             line-height: 0.89;
+            top: -140px;
         }
 
         .section__title {
@@ -184,9 +185,13 @@
         }
 
         .section__header-title-bg {
+            @media (max-width: $xl) {
+                font-size: 120px;
+                top: -100px;
+            }
             @media (max-width: $lg) {
                 font-size: 100px;
-                top: -60px;
+                top: -80px;
             }
 
             @media (max-width: $md) {
