@@ -274,11 +274,16 @@
         }
 
         @media (max-width: $md) {
+            overflow: hidden;
             grid-row: auto !important;
             grid-column: auto !important;
 
-            max-width: fit-content;
-            max-height: fit-content;
+            height: auto !important;
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
         }
 
         .card__text-block {
