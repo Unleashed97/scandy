@@ -8,6 +8,7 @@
         max-height: 491px;
 
         @media (max-width: $lg) {
+            padding: 0 0 30px;
             flex-direction: column;
             align-items: center;
             max-height: fit-content;
@@ -36,16 +37,28 @@
                 .card__text-block {
                     order: 1;
                 }
+
+                @media (max-width: $lg) {
+                    .swiper {
+                        order: 1;
+                    }
+
+                    .card__text-block {
+                        order: 2;
+                    }
+                }
             }
         }
 
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
             .card__text-block {
                 width: 100%;
+                order: 2;
             }
 
             .swiper {
                 width: 100%;
+                order: 1;
             }
         }
 
@@ -466,6 +479,7 @@
         color: #acacac;
 
         @media (max-width: $sm) {
+            min-width: 70px;
             max-width: 70px;
         }
 
