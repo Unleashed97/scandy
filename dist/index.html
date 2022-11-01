@@ -703,25 +703,26 @@
             myMap = new ymaps.Map("map", {
                 center: [53.930000, 37.627590],
                 zoom: 14,
-            });
+            }),
 
-            //Пишем свойства для нашей метки
-            myPlacemark = new ymaps.Placemark([53.929326, 37.627584], {
-                hintContent: '',
-                balloonContent: ''
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета. Показываем что это изображение.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки. Указываем путь до картинки
-                iconImageHref: 'img/icons/marker.png',
-                // Размеры метки. 
-                iconImageSize: [39, 46],
-                // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
-                iconImageOffset: [-30, -30]
-            });
-            //Добавляем метку на карту + убираем скролл мышкой 
-            myMap.geoObjects.add(myPlacemark);
+                //Пишем свойства для нашей метки
+                myPlacemark = new ymaps.Placemark([53.929326, 37.627584], {
+                    hintContent: '',
+                    balloonContent: '',
+                    BalloonContentLayout: ''
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета. Показываем что это изображение.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки. Указываем путь до картинки
+                    iconImageHref: 'img/icons/marker.png',
+                    // Размеры метки. 
+                    iconImageSize: [39, 46],
+                    // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
+                    iconImageOffset: [-30, -30]
+                }),
+                //Добавляем метку на карту + убираем скролл мышкой 
+                myMap.geoObjects.add(myPlacemark);
             myMap.behaviors.disable('scrollZoom');
         }
     </script>
