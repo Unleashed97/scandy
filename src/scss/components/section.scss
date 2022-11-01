@@ -131,9 +131,13 @@
     &--st {
         .section__title {
             padding-bottom: 46px;
+
+            @media (max-width: $xl) {
+                padding-bottom: 60px;
+            }
         }
         .section__header-title-bg {
-            font-size: 150px;
+            font-size: 130px;
             line-height: 0.89;
             top: -140px;
 
@@ -146,14 +150,14 @@
                 top: -80px;
             }
 
-            @media (max-width: $md) {
-                font-size: 90px;
-                top: -100px;
-                line-height: 0.8;
+            @media (max-width: 999px) {
+                font-size: 80px;
+                top: -80px;
             }
 
-            @media (max-width: $sm) {
-                display: none;
+            @media (max-width: $md) {
+                font-size: 60px;
+                top: -80px;
             }
         }
 
@@ -183,16 +187,10 @@
 
     &--about-st {
         .section__header-title-bg {
-            font-size: 150px;
+            font-size: 130px;
             line-height: 0.89;
             top: -140px;
-        }
 
-        .section__title {
-            padding-bottom: 46px;
-        }
-
-        .section__header-title-bg {
             @media (max-width: $xl) {
                 font-size: 120px;
                 top: -100px;
@@ -202,9 +200,22 @@
                 top: -80px;
             }
 
-            @media (max-width: $md) {
+            @media (max-width: 999px) {
                 font-size: 80px;
                 top: -80px;
+            }
+
+            @media (max-width: $md) {
+                font-size: 60px;
+                top: -80px;
+            }
+        }
+
+        .section__title {
+            padding-bottom: 46px;
+
+            @media (max-width: $xl) {
+                padding-bottom: 60px;
             }
         }
 
