@@ -310,6 +310,14 @@
         .section__inner {
             padding-top: 258px;
             padding-bottom: 67px;
+
+            @media (max-width: $xl) {
+                padding-top: 150px;
+            }
+
+            @media (max-width: $sm) {
+                padding-top: 80px;
+            }
         }
 
         .section__header {
