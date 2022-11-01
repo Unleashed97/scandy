@@ -72,12 +72,16 @@
         position: absolute;
         top: 17px;
         left: 50%;
-        z-index: 1;
+        z-index: 5;
 
         transform: translate(-50%);
 
         @media (max-width: $lg) {
-            display: none;
+            top: 5px;
+            width: 60px;
+
+            left: 15px;
+            transform: translate(0);
         }
     }
 
