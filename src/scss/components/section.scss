@@ -135,6 +135,10 @@
             @media (max-width: $xl) {
                 padding-bottom: 60px;
             }
+
+            @media (max-width: $sm) {
+                padding-bottom: 46px;
+            }
         }
         .section__header-title-bg {
             font-size: 130px;
@@ -216,6 +220,10 @@
 
             @media (max-width: $xl) {
                 padding-bottom: 60px;
+            }
+
+            @media (max-width: $sm) {
+                padding-bottom: 46px;
             }
         }
 
