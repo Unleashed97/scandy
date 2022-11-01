@@ -17,11 +17,23 @@
 
     &--orange {
         background-color: $colors-orange;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: lighten($colors-orange, 10%);
+        }
     }
 
     &--light-blue {
         font-size: 24px;
         color: #1e1e1e;
         background-color: #b8c8dc;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: lighten(#b8c8dc, 10%);
+        }
     }
 }
