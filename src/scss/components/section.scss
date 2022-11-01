@@ -322,7 +322,6 @@
     }
 
     &--faq {
-        background: url('../img/section/faq/bg.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -349,8 +348,6 @@
     }
 
     &--map {
-        background: url('../img/section/map/bg.png');
-
         background-position-y: -200px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -423,7 +420,6 @@
 
     &--feedback {
         position: relative;
-        background: url('../img/feedback/bg.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -546,5 +542,34 @@
     &__btn {
         width: 285px;
         height: 74px;
+    }
+}
+
+// webp support
+.no-webp {
+    .section--faq {
+        background-image: url('../img/section/faq/bg.png');
+    }
+
+    .section--map {
+        background-image: url('../img/section/map/bg.png');
+    }
+
+    .section--feedback {
+        background-image: url('../img/feedback/bg.jpg');
+    }
+}
+
+.webp {
+    .section--faq {
+        background-image: url('../img/section/faq/bg.webp');
+    }
+
+    .section--map {
+        background-image: url('../img/section/map/bg.webp');
+    }
+
+    .section--feedback {
+        background-image: url('../img/feedback/bg.webp');
     }
 }

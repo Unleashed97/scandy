@@ -1,12 +1,6 @@
 .showcase {
     min-height: 1278px;
 
-    background: linear-gradient(
-            rgba(#1d1d1d, 0.4) 53%,
-            rgba(#1d1d1d, 25%) 90%,
-            rgba(#1d1d1d, 8%)
-        ),
-        url('../img/showcase/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
 
@@ -16,13 +10,7 @@
         min-height: fit-content;
     }
 
-    &--about {
-        background: linear-gradient(
-                rgba(#1d1d1d, 0.4) 53%,
-                rgba(#1d1d1d, 25%) 90%,
-                rgba(#1d1d1d, 8%)
-            ),
-            url('../img/showcase/bg-about.jpg');
+    &--houses {
         min-height: 906px;
 
         background-repeat: no-repeat;
@@ -31,13 +19,6 @@
     }
 
     &--contacts {
-        background: linear-gradient(
-                rgba(#1d1d1d, 0.4) 53%,
-                rgba(#1d1d1d, 25%) 90%,
-                rgba(#1d1d1d, 8%)
-            ),
-            url('../img/showcase/bg-contacts.jpg');
-
         min-height: 740px;
 
         background-repeat: no-repeat;
@@ -50,13 +31,6 @@
     }
 
     &--mini {
-        background: linear-gradient(
-                rgba(#1d1d1d, 0.4) 53%,
-                rgba(#1d1d1d, 25%) 90%,
-                rgba(#1d1d1d, 8%)
-            ),
-            url('../img/showcase/bg-mini.jpg');
-
         min-height: 914px;
 
         background-repeat: no-repeat;
@@ -129,5 +103,82 @@
 
     100% {
         background-size: 105%;
+    }
+}
+
+// webp support
+.no-webp {
+    .showcase {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg.jpg');
+    }
+
+    .showcase--houses {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-houses.jpg');
+    }
+
+    .showcase--contacts {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-contacts.jpg');
+    }
+
+    .showcase--mini {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-mini.jpg');
+    }
+}
+
+.webp {
+    .showcase {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg.webp');
+    }
+
+    .showcase--houses {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-houses.webp');
+    }
+
+    .showcase--contacts {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-contacts.webp');
+    }
+
+    .showcase--mini {
+        background-image: linear-gradient(
+                rgba(#1d1d1d, 0.4) 53%,
+                rgba(#1d1d1d, 25%) 90%,
+                rgba(#1d1d1d, 8%)
+            ),
+            url('../img/showcase/bg-mini.webp');
     }
 }
